@@ -9,6 +9,7 @@ Provide a simple add function that handles
  3) implement unit test for the add function to validate given inputs
 
  APPROACH AND CODE STRUCTURE
+
  The add(numbers:String) function is the base function, its job is
  1) check if input is empty
  2) check if is a customDelimiterString
@@ -29,7 +30,7 @@ Provide a simple add function that handles
  3)while we iterate, we need to take into consideration that there could be delimiters of arbitrary length e.g "***"
  those delimiters if not handle could be seen as different delimiters.
  4) create a simple logic that checks if the delimiter you are at in the loop is equal to the previous delimiter
- and if it is, you simply just want to append to the previous delimiter e.g "*" and "*" will now be "**"
+ and if it is, you simply just want to append to the previous delimiter e.g "\*" and "\*" will now be "**"
  this way, delimiter of arbitrary length are taken as one entity.
  5) we can also get multiple delimiters and this loop would handle the case easily.
  add all the delimiters found into a list of string called delimiterList and return it.
